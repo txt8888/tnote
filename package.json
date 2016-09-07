@@ -1,0 +1,15 @@
+{
+  "name"           : "tnote",
+  "main"           : "./lib/tnote",
+  "version"        : "0.0.1",
+  "description"    : "My Timestamp Note",
+  "keywords"       : [ "text", "note" ],
+  "activationHooks": [ "language-text:grammar-used" ],
+  "repository"     : "https://github.com/txt8888/tnote",
+  "license"        : "MIT",
+  "engines"        : {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies"   : {
+  }
+}

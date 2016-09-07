@@ -1,0 +1,2 @@
+'atom-text-editor':
+  'ctrl-k ctrl-t': 'tnote:insert-timestamp'

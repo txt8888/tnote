@@ -1,0 +1,26 @@
+'name'             : 'tNote'
+'scopeName'        : 'text.tnote'
+'injectionSelector': 'text.plain'
+'patterns'         : [
+  {
+    'match'   : '^(={2,3}) ((\\d{4}\\/\\d{2}\\/\\d{2}|\\d{2}\\/\\d{2}\\/\\d{4}) (\\(\\w{3}\\)) (\\d{2}:\\d{2}:\\d{2} (AM|PM))) (={2,3})(.*)'
+    'name'    : 'tnote.marker'
+    'captures':
+      '1':
+        'name': 'tnote.sep'
+      '2':
+        'name': 'tnote.timestamp'
+      '3':
+        'name': 'tnote.timestamp.date'
+      '4':
+        'name': 'tnote.timestamp.weekday'
+      '5':
+        'name': 'tnote.timestamp.time'
+      '6':
+        'name': 'tnote.timestamp.time.suffix'
+      '7':
+        'name': 'tnote.sep'
+      '8':
+        'name': 'tnote.notes'
+  }
+]
